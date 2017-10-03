@@ -37,11 +37,14 @@ import {
   MdToolbarModule,
   MdTooltipModule,
 } from '@angular/material';
+import { ButtonHeaderComponent, CreateArticleDialogComponent } from './button-header/button-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    ButtonHeaderComponent,
+    CreateArticleDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -81,6 +84,10 @@ import {
     MdTooltipModule
   ],
   providers: [],
-  bootstrap: [ AppComponent ]
+  bootstrap: [
+    AppComponent,
+    ButtonHeaderComponent,
+    CreateArticleDialogComponent
+  ]
 })
 export class AppModule { }
